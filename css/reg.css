@@ -1,0 +1,35 @@
+
+*{
+    padding:auto;
+    margin:auto;
+    text-align:centre;
+    }
+
+
+
+#reg-form{
+   
+ 
+
+    width: 550px;
+    height: 450px;
+    margin: auto;
+    position: relative;
+   
+}
+
+
+.border{
+    border-color: #f6d8ac;
+}
+
+
+
+.submitcolor{
+    background-color: #f6d8ac;
+    font-weight: bold;
+}
+
+#headingreg{
+    margin:50px;
+}

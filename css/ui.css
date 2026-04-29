@@ -1,0 +1,149 @@
+
+/*
+giving margin at bottom of hero
+*/
+
+.paddinghero{
+    margin-bottom:10%;
+}
+
+#regbutton{
+    background-color: #7e9a9a;
+}
+
+
+.headinggenre{
+    color: #f6d8ac; 
+    font-weight: 500;
+    background-color:black;
+}
+
+
+#booksy{
+    color: #7e9a9a;
+    font-weight: bold;
+    font-size: large;
+}
+
+
+#yellowbut{
+    background-color:#f6d8ac;
+}
+
+#genregrid{
+    border-spacing: 15px 15px;
+}
+
+
+#owlcara{
+    background-color: black; 
+    width: 100%; 
+    height: 300px;
+}
+
+.owldots{
+    display:none;
+}
+
+
+#items{
+    padding-left: 5000px;
+}
+
+
+
+.winner-title{
+    color:#7e9a9a;
+    font-weight: bold;
+
+}
+
+
+/*
+book.html
+*/
+
+#hero-book-box{
+    background-color:#7e9a9a;
+    color:white;
+    font-weight: 100px;
+}
+
+#information-box{
+    background-color:#7e9a9a;
+    color:white;
+    font-weight: 100px;
+}
+
+
+#name-box{
+    background-color:#7e9a9a;
+    color:white;
+    font-weight: 100px;
+}
+
+
+.checked {
+    color: gold;
+  }
+
+.half-star{
+    color: gold;
+}
+
+#hero-color-cara{
+    background-color:#7e9a9a;
+}
+
+#hero-subtitle{
+    color:white;
+
+    
+}
+
+
+#right-side-row{
+   border-style: groove;
+}
+
+#middle-side-row{
+    border-style: groove;
+}
+
+
+/*
+search.html
+*/
+
+
+
+
+#submitsearch{
+    background-color:#f6d8ac;
+    color: black;
+    font-weight: 500;
+}
+
+
+#results{
+    background-color:#8B795E;
+    font-weight: 500;
+}
+
+
+
+/*
+genrelist
+*/
+
+#submitbutton{
+    background-color:#f6d8ac;
+}
+
+/*
+library 
+*/
+
+#hero-space{
+    background-color:#f6d8ac;
+}

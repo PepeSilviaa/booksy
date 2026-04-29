@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Booksy</title>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+  <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">-->
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+    crossorigin="anonymous"/>
+    
+  <link rel="stylesheet" href="http://rmcgrath13.lampt.eeecs.qub.ac.uk/booksy/css/ui.css">
+
+
+  <script>
+
+    //jquery functions
+
+    $(document).ready(function () {
+      ~
+        $(".dropdown-item").on("click", function () {
+          console.log("book added");
+          alert('you have added book to your list');
+          //figure out to change button here once clicked 
+
+        });
+
+
+      // Check for click events on the navbar burger icon
+      $(".navbar-burger").click(function () {
+     
+        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+        $(".navbar-burger").toggleClass("is-active");
+        $(".navbar-menu").toggleClass("is-active");
+        $(".buttons").hide();
+      });
+    });
+
+  </script>
+
+  <script>
+    //to put the values of books into this page - inset code here
+    $(document).ready(function () {
+      
+    });
+  </script>
+
+</head>
+
+
+
+
+
+<body>
+  <!--main nav bar-->
+  <nav class="navbar is-white is-spaced" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand image-max-height">
+      <a class="navbar-item " href="">
+        <img src="logo.png" alt="Booksy" width="40" height="28">
+        <div class="column" id="booksy">
+          Booksy
+        </div>
+      </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item" href="index.html">Home</a>
+
+
+        <a class="navbar-item" href = "#">My Library</a>
+
+        <div class="navbar-item has-dropdown is-hoverable has-text-warning-dark">
+
+          <a class="navbar-link" href="#">Explore</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href = "fiction.html">Fiction</a>
+            <a class="navbar-item" href = "#">Non-Fiction</a>
+            <hr class="navbar-divider">
+            <a class="navbar-item" href = "#">Horror</a>
+            <a class="navbar-item" href = "#">Romance</a>
+            <a class="navbar-item" href = "#">Thriller</a>
+            <a class="navbar-item" href = "#">Mystery</a>
+            <a class="navbar-item" href = "#">Fantasy</a>
+            <a class="navbar-item" href = "#">Historical</a>
+            <a class="navbar-item" href = "#">Short Picks</a>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="navbar-end">
+        <div class="navbar-item">
+
+          <!--maybe put other nav options here-->
+          <!---->
+          <div class="buttons">
+            <a class="button is-white" href="#">
+              <Strong>Log In</Strong>
+            </a>
+            <a class="button is-white" href="#">
+              <Strong>Register</Strong>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <!--maybe try bulma form group ??-->
+  <!--Title + winner of Fiction books-->
+  <section class="hero is-centered is-bold" id="hero-book-box">
+    <div class="hero-body is-large">
+
+      <div class="column is-family-primary has-text-centered">
+        <!--text area for book winner-->
+
+        <div class="block is-size-3 " id="topbookheading">
+          Family Secrets: Secrets of the Night, #1
+        </div>
+        <div class="block is-size-5 has-text-weight" id="topbookauthor">
+          By Rebekah McClew
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+
+
+
+
+  <!--lists-->
+  <div class="container is-centered mt-6 mb-6">
+    <div class=" columns" id="bookitem">
+
+    <div class="column is-one-quarter" id="left-side-row">
+      <div class="column" id="image-box">
+        <img src="https://images.gr-assets.com/books/1354610192l/16200303.jpg">
+      </div>
+    </div>
+
+
+
+    <div class="column mr-6" id="middle-side-row">
+      <div class="column" id="name-box">
+        Family Secrets: Secrets of the Night, #1
+      </div>
+      <div class="column">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star-half half-star"></span>
+        <span class="fa fa-star unchecked"></span>
+      </div>
+      <div class="column" id="description-box">
+
+        <p>
+          While Laila found herself blending in with the town, my obsession led me to the McAllister estate. Despite the
+          warnings I was told about the estate my curiosity grew and I became obsessed with the home as well as the
+          inhabitants inside.In the end it took two idiots to bite me and one to dig me up.
+        </p>
+
+        </br>
+
+        <p>
+          I had no idea what was going to happen to me from this point on but I did know there wasn't a choice; it was
+          inevitably going to happen
+        </p>
+
+      </div>
+
+      <div class="column" id="buttons-box">
+        <div class="dropdown is-hoverable">
+          <div class="dropdown-trigger">
+            <button class="button ml-3 " id="submitbutton" aria-haspopup="true" aria-controls="dropdown-menu">
+              <span>Add to Library</span>
+              <span class="icon is-small">
+                <i class="fas fa-angle-down" aria-hidden="true"></i>
+              </span>
+            </button>
+          </div>
+          <div class="dropdown-menu" id="dropdown-menu" role="menu">
+            <div class="dropdown-content">
+              <a href="#" class="dropdown-item">
+                Want to Read
+              </a>
+              <a class="dropdown-item">
+                Read
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="column is-one-quarter" id="right-side-row">
+      <div class="column" id="information-box">
+        <p>More Information</p>
+      </div>
+      <div class="column" id="isbn-box">
+        <p><Strong>ISBN : </Strong>48820044-22244</p>
+      </div>
+      <div class="column" id="author-box">
+        <p><strong>Book format : </strong> Paperback</p>
+      </div>
+      <div class="column" id="book-format-box">
+        <p><Strong>Book Author :</Strong>Rebekah McClew </p>
+      </div>
+      <div class="column" id="pages-box">
+        <p><Strong>Page total : </Strong>285 pages</p>
+      </div>
+      <div class="column" id="book-review-count">
+        <p><Strong>Total book reviews: </Strong>10338</p>
+      </div>
+      <div class="column" id="book-rating-count">
+        <p><Strong>Total book rating reviews: </Strong>5338</p>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+ <!--Footer-->
+ <footer class="footer">
+  <div class="content has-text-centered is-size-7">
+    <p>
+      <strong>Booksy</strong> by Rosie McGrath</br>
+      Want to tell your friends?
+    </p>
+
+    <span class="icon">
+      <i class="fab fa-facebook"></i>
+    </span>
+    <span class="icon has-text-info">
+      <i class="fab fa-twitter"></i>
+    </span>
+    <span class="icon has-text-danger">
+      <i class="fab fa-pinterest"></i>
+    </span>
+
+  </div>
+
+</footer>
+
+
+</body>
+</html>
