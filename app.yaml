@@ -1,0 +1,13 @@
+runtime: php81
+env: standard
+
+#Connection can be found at connections on GCP
+# test without underscores
+env_variables:
+  CLOUD_SQL_CONNECTION_NAME: "booksy-staging:us-central1:free-trial-first-project"
+  DB_USER: "root"
+  DB_PASS: "YOUR_CLOUD_SQL_PASSWORD"
+  DB_NAME: "rmcgrath13"
+
+beta_settings:
+  cloud_sql_instances: "booksy-staging:us-central1:free-trial-first-project"
