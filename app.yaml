@@ -5,9 +5,9 @@ env: standard
 # test without underscores
 env_variables:
   CLOUD_SQL_CONNECTION_NAME: "booksy-staging:us-central1:free-trial-first-project"
-  DB_USER: "root"
-  DB_PASS: "YOUR_CLOUD_SQL_PASSWORD"
-  DB_NAME: "rmcgrath13"
+  DB_USER: "free-trial-first-project-user"
+  DB_PASS: "Castle123"
+  DB_NAME: "free-trial-first-project"
 
 beta_settings:
   cloud_sql_instances: "booksy-staging:us-central1:free-trial-first-project"
